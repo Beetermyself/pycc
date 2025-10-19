@@ -21,39 +21,39 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Jimmy Blog',
+  title: 'Pycc Blog',
   description: '书写，思考，生活',
   keywords: ['blog', 'technology', 'personal blog', 'next.js'],
-  authors: [{ name: 'Jimmy' }],
-  creator: 'Jimmy',
-  publisher: 'Jimmy',
+  authors: [{ name: 'Pycc' }],
+  creator: 'Pycc',
+  publisher: 'Pycc',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.jimmy-blog.top'),
+  metadataBase: new URL('https://www.pycc.top'),
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    url: 'https://www.jimmy-blog.top',
-    title: 'Jimmy Blog',
+    url: 'https://www.pycc.top',
+    title: 'Pycc Blog',
     description: '书写，思考，生活',
-    siteName: 'Jimmy Blog',
+    siteName: 'Pycc Blog',
     images: [
       {
-        url: 'https://www.jimmy-blog.top/og-image.png',
+        url: 'https://www.pycc.top/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Jimmy Blog',
+        alt: 'Pycc Blog',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jimmy Blog',
+    title: 'Pycc Blog',
     description: '书写，思考，生活',
-    images: ['https://www.jimmy-blog.top/og-image.png'],
+    images: ['https://www.pycc/og-image.png'],
   },
   icons: {
     icon: '/favorite.png',
