@@ -4,18 +4,18 @@ import { getAllPosts, Post } from './posts';
 
 export async function generateRssFeed() {
   const posts = await getAllPosts();
-  const siteURL = 'https://jimmy-blog.vercel.app';
+  const siteURL = 'https://pycc.top';
   const date = new Date();
 
   const author = {
-    name: 'Jimmy',
-    email: 'jimmy@example.com',
+    name: 'Pycc',
+    email: 'Pycc@example.com',
     link: siteURL,
   };
 
   const feed = new Feed({
-    title: 'Jimmy的博客',
-    description: 'Jimmy的个人博客，分享技术、生活和思考。',
+    title: 'Pycc Blog',
+    description: 'Pycc Life',
     id: siteURL,
     link: siteURL,
     language: 'zh-CN',
