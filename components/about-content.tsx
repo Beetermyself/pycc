@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Github,  Mail,  Rss, MessageCircle, User } from "lucide-react"
+import { Github,  Mail,  Rss, MessageCircle, User, PlaneTakeoff } from "lucide-react"
 import { Footer } from "@/components/footer"
 import { OptimizedImage } from "@/components/ui/optimized-image"
 import { Header } from "@/components/header"
@@ -69,12 +69,12 @@ export function AboutContent({ initialStats }: AboutContentProps) {
     }
   }
 
-  const copyEmail = () => copyToClipboard("sxy1308075897@gmail.com", 'email')
-  const copyWechat = () => copyToClipboard("OOIll0", 'wechat')
+  const copyEmail = () => copyToClipboard("phperclub@gmail.com", 'email')
+  const copyWechat = () => copyToClipboard("shinegray", 'wechat')
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-6">
-      <Header showBackButton={true} title="关于" />
+      <Header showBackButton={true} title="Обо мне" />
 
       <main>
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
@@ -90,8 +90,8 @@ export function AboutContent({ initialStats }: AboutContentProps) {
               group shrink-0"
           >
             <OptimizedImage
-              src="/logo2.png"
-              alt="Jimmy's photo"
+              src="/dog.jpg"
+              alt="Pycc's photo"
               width={192}
               height={192}
               className="object-cover transition-all duration-300 ease-out dark:invert"
@@ -102,12 +102,12 @@ export function AboutContent({ initialStats }: AboutContentProps) {
           </div>
           <div className="flex-1 space-y-6 text-center md:text-left">
             <div>
-              <h1 className="text-3xl font-bold mb-2">关于</h1>
-              <p className="text-lg text-zinc-600 dark:text-zinc-400">O Captain! My Captain!</p>
+              <h1 className="text-3xl font-bold mb-2">Обо мне</h1>
+              <p className="text-lg text-zinc-600 dark:text-zinc-400">Моя мечта — всегда в пути!</p>
             </div>
             <div className="flex flex-wrap justify-center md:justify-start gap-3">
               <a
-                href="https://about.jimmy-blog.top/"
+                href="https://pycc.top/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center px-4 py-2 rounded-lg
@@ -120,40 +120,8 @@ export function AboutContent({ initialStats }: AboutContentProps) {
                   transition-colors
                   group"
               >
-                <User className="h-5 w-5 mr-2" />
-                <span>作品集</span>
-              </a>
-              <a
-                href="https://github.com/Lily-404"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center px-4 py-2 rounded-lg 
-                  bg-zinc-100/50 dark:bg-zinc-800/50
-                  hover:bg-zinc-200/50 dark:hover:bg-zinc-700/50
-                  border border-zinc-200/50 dark:border-zinc-700/50
-                  hover:border-zinc-300/50 dark:hover:border-zinc-600/50
-                  text-zinc-600 dark:text-zinc-400
-                  hover:text-zinc-800 dark:hover:text-zinc-200
-                  transition-colors"
-              >
-                <Github className="h-5 w-5 mr-2" />
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://okjk.co/ITgDUG"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center px-4 py-2 rounded-lg 
-                  bg-zinc-100/50 dark:bg-zinc-800/50
-                  hover:bg-zinc-200/50 dark:hover:bg-zinc-700/50
-                  border border-zinc-200/50 dark:border-zinc-700/50
-                  hover:border-zinc-300/50 dark:hover:border-zinc-600/50
-                  text-zinc-600 dark:text-zinc-400
-                  hover:text-zinc-800 dark:hover:text-zinc-200
-                  transition-colors"
-              >
-                <span className="h-5 w-5 mr-2 flex items-center justify-center">J</span>
-                <span>即刻</span>
+                <PlaneTakeoff className="h-5 w-5 mr-2" />
+                <span>Travel</span>
               </a>
               <button
                 onClick={copyEmail}
@@ -167,7 +135,7 @@ export function AboutContent({ initialStats }: AboutContentProps) {
                   transition-colors group relative"
               >
                 <Mail className="h-5 w-5 mr-2" />
-                <span>邮箱</span>
+                <span>Email</span>
                 {copied === 'email' && (
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-zinc-800 text-white text-xs rounded-md whitespace-nowrap">
                     已复制到剪贴板
@@ -186,7 +154,7 @@ export function AboutContent({ initialStats }: AboutContentProps) {
                   transition-colors group relative"
               >
                 <MessageCircle className="h-5 w-5 mr-2" />
-                <span>微信</span>
+                <span>wechat</span>
                 {copied === 'wechat' && (
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-zinc-800 text-white text-xs rounded-md whitespace-nowrap">
                     已复制到剪贴板
@@ -217,9 +185,9 @@ export function AboutContent({ initialStats }: AboutContentProps) {
           <div className="relative mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-50/10 via-purple-50/10 to-pink-50/10 dark:from-blue-900/5 dark:via-purple-900/5 dark:to-pink-900/5 blur-3xl" />
             <div className="relative p-8 rounded-2xl bg-zinc-50/50 dark:bg-zinc-800/50 backdrop-blur-md backdrop-saturate-150 border border-zinc-200/50 dark:border-zinc-700/50 hover:border-zinc-300/50 dark:hover:border-zinc-600/50 transition-all duration-300">
-              <h2 className="text-xl font-semibold mb-4">简介</h2>
+              <h2 className="text-xl font-semibold mb-4">Описание</h2>
               <div className="space-y-4">
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">在这里记录生活的点点滴滴，分享一些有趣的想法和感受</p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">Предприниматель во мне постоянно курсирует между Россией и Китаем!                </p>
                 <div className="grid grid-cols-3 gap-4">
                   <div className="flex flex-col items-center p-4 rounded-xl bg-zinc-50/50 dark:bg-zinc-800/50 
                     hover:bg-zinc-100/50 dark:hover:bg-zinc-800/50 
@@ -247,41 +215,6 @@ export function AboutContent({ initialStats }: AboutContentProps) {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="bg-zinc-50/50 dark:bg-zinc-800/50 rounded-xl p-6 
-            hover:bg-zinc-100/50 dark:hover:bg-zinc-800/50 
-            border border-zinc-200/50 dark:border-zinc-700/50
-            hover:border-zinc-300/50 dark:hover:border-zinc-600/50
-            transition-colors">
-            <h2 className="text-xl font-semibold mb-4">本站</h2>
-            <div className="space-y-3 text-zinc-600 dark:text-zinc-400">
-              <p>这个博客使用 Next.js构建，用来记录我在技术学习和工作中的心得体会。</p>
-              <p>同时也会分享一些关于生活、阅读的想法。</p>
-            </div>
-          </div>
-
-          <div className="bg-zinc-50/50 dark:bg-zinc-800/50 rounded-xl p-6 
-            hover:bg-zinc-100/50 dark:hover:bg-zinc-800/50 
-            border border-zinc-200/50 dark:border-zinc-700/50
-            hover:border-zinc-300/50 dark:hover:border-zinc-600/50
-            transition-colors">
-            <h2 className="text-xl font-semibold mb-4">项目</h2>
-            <div className="space-y-3 text-zinc-600 dark:text-zinc-400">
-              <p>本博客是开源的，感兴趣的话麻烦点个Star，你可以在 GitHub 查看源码：</p>
-              <a 
-                href="https://github.com/Lily-404/blog"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 
-                  text-zinc-600 dark:text-zinc-400
-                  hover:text-zinc-800 dark:hover:text-zinc-200
-                  transition-colors"
-              >
-                <Github className="w-5 h-5" />
-                <span>Lily-404/blog</span>
-              </a>
             </div>
           </div>
         </div>

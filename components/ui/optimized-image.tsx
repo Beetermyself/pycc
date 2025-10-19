@@ -28,7 +28,7 @@ export function OptimizedImage({
   ...props
 }: OptimizedImageProps) {
   // 只对头像做缓存优化，其它图片按原逻辑
-  const isAvatar = src === "/cat.jpg";
+  const isAvatar = src === "/dog.jpg";
   const [isLoading, setIsLoading] = useState(isAvatar ? !globalImageLoadedMap.get(src) : true);
   const [isError, setIsError] = useState(false);
 

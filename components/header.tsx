@@ -10,7 +10,7 @@ export function Header({ showBackButton = false, backButtonHref = "/", showNav =
       <header className="mb-6 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img
-            src="/cat.jpg"
+            src="/dog.jpg"
             alt="Jimmy's avatar"
             width={40}
             height={40}
@@ -22,7 +22,7 @@ export function Header({ showBackButton = false, backButtonHref = "/", showNav =
               navigator.clipboard.writeText(window.location.href);
             }}
           >
-            Jimmy's Blog
+            Pycc's Home
           </h1>
         </div>
         <div className="flex items-center gap-4">
